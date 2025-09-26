@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fida's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+        .section {
+            scroll-margin-top: 2rem;
+        }
+        .bg-custom-blue {
+            background-color: #3b82f6;
+        }
+        .text-custom-blue {
+            color: #3b82f6;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-lg sticky top-0 z-50 rounded-b-lg">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold text-gray-800 rounded-lg transition duration-300 transform hover:scale-105">Fida Abdul Hameed</a>
+            <div class="space-x-4">
+                <a href="#about" class="text-gray-600 hover:text-custom-blue transition duration-300 ease-in-out rounded-lg p-2 hover:bg-gray-100">About</a>
+                <a href="#education" class="text-gray-600 hover:text-custom-blue transition duration-300 ease-in-out rounded-lg p-2 hover:bg-gray-100">Education</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- Home Section -->
+        <section id="home" class="section flex flex-col items-center justify-center text-center py-20 bg-white rounded-xl shadow-lg mb-12">
+            <div class="w-32 h-32 bg-gray-300 rounded-full overflow-hidden mb-6">
+                <!-- Placeholder for a profile picture -->
+                <img src="https://placehold.co/128x128/e5e7eb/4b5563?text=FAH" alt="Fida's Profile" class="w-full h-full object-cover">
+            </div>
+            <h1 class="text-5xl font-extrabold text-gray-900 mb-4">Fida Abdul Hameed</h1>
+            <p class="text-xl text-gray-600">B.Tech in Computer Science and Engineering</p>
+            <a href="#about" class="mt-8 px-8 py-3 bg-custom-blue text-white font-semibold rounded-full shadow-md hover:bg-blue-600 transition duration-300 transform hover:scale-105">Learn More</a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section py-12 bg-white rounded-xl shadow-lg mb-12 p-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-2 border-gray-200 pb-2">About Me</h2>
+            <div class="text-lg text-gray-700 leading-relaxed">
+                <p>Hello! I'm Fida Abdul Hameed, a passionate and driven student from **Thrissur, Kerala**. I am currently pursuing my **Bachelor of Technology in Computer Science and Engineering**.</p>
+                <p class="mt-4">My journey in computer science is fueled by curiosity and a desire to build innovative solutions. I am keen on exploring new technologies and applying my skills to real-world problems.</p>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section py-12 bg-white rounded-xl shadow-lg p-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-2 border-gray-200 pb-2">Education</h2>
+            <div class="text-lg text-gray-700 space-y-4">
+                <div>
+                    <h3 class="font-semibold text-xl text-custom-blue">Bachelor of Technology, Computer Science and Engineering</h3>
+                    <p class="text-gray-600">Vidya Academy of Science and Technology, Thrissur, Kerala</p>
+                    <p class="text-sm text-gray-500 mt-1">Currently enrolled</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-6 mt-12 rounded-t-lg">
+        <p class="text-sm">&copy; 2024 Fida Abdul Hameed. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
